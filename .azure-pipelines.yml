@@ -25,9 +25,7 @@ jobs:
 
   - script: |
       sudo easy_install pip
-      sudo pip install -U setuptools
-      sudo pip install -U requests
-      sudo pip install -U virtualenv
+      sudo pip install -U virtualenv tox
     displayName: 'Install Python packages'
     condition: variables.run_wptrunner_infrastructure
 
